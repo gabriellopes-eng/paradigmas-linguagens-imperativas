@@ -2,19 +2,19 @@ class QuickSort:
 
     @staticmethod
     def sort(array):
-        QuickSort._quicksort(array, 0, len(array) - 1)
+        QuickSort.quicksort(array, 0, len(array) - 1)
         return array
 
     @staticmethod
-    def _quicksort(array, low, high):
+    def quicksort(array, low, high):
         if low < high:
-            pivot_index = QuickSort._partition(array, low, high)
+            pivot_index = QuickSort.partition(array, low, high)
 
-            QuickSort._quicksort(array, low, pivot_index - 1)
-            QuickSort._quicksort(array, pivot_index + 1, high)
+            QuickSort.quicksort(array, low, pivot_index - 1)
+            QuickSort.quicksort(array, pivot_index + 1, high)
 
     @staticmethod
-    def _partition(array, low, high):
+    def partition(array, low, high):
         pivot = array[high]
         i = low - 1
 

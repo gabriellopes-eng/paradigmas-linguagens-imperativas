@@ -5,7 +5,7 @@ class Hanoi:
 
         moves = []
 
-        Hanoi._hanoi_recursive(
+        Hanoi.hanoi_recursive(
             disks,
             source,
             auxiliary,
@@ -16,7 +16,7 @@ class Hanoi:
         return moves
 
     @staticmethod
-    def _hanoi_recursive(disks, source, auxiliary, target, moves):
+    def hanoi_recursive(disks, source, auxiliary, target, moves):
 
         if disks == 1:
 
@@ -26,7 +26,7 @@ class Hanoi:
 
             return
 
-        Hanoi._hanoi_recursive(
+        Hanoi.hanoi_recursive(
             disks - 1,
             source,
             target,
@@ -38,7 +38,7 @@ class Hanoi:
             f"Mover disco {disks} de {source} para {target}"
         )
 
-        Hanoi._hanoi_recursive(
+        Hanoi.hanoi_recursive(
             disks - 1,
             auxiliary,
             source,

@@ -10,10 +10,11 @@ namespace HanoiNamespace
             List<string> moves
         )
         {
+
             if (disks == 1)
             {
                 moves.Add(
-                    $"Mover disco 1 de {source} para {target}"
+                    $"Move disk 1 from {source} to {target}"
                 );
 
                 return;
@@ -27,8 +28,9 @@ namespace HanoiNamespace
                 moves
             );
 
+
             moves.Add(
-                $"Mover disco {disks} de {source} para {target}"
+                $"Move disk {disks} from {source} to {target}"
             );
 
             Solve(

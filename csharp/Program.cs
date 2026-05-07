@@ -83,13 +83,13 @@ class Program
         double knapsackTime =
             stopwatch.Elapsed.TotalSeconds;
 
-        // TABELA DE MÉTRICAS
+        // METRICS TABLE
         Console.WriteLine(
             "\n=============================================================="
         );
 
         Console.WriteLine(
-            "MÉTRICAS COMPARATIVAS - C#"
+            "COMPARATIVE METRICS - C#"
         );
 
         Console.WriteLine(
@@ -97,10 +97,10 @@ class Program
         );
 
         Console.WriteLine(
-            $"{"Problema",-20}" +
-            $"{"Tempo(s)",-15}" +
-            $"{"Linhas",-10}" +
-            $"{"Tamanho(KB)",-15}"
+            $"{"Problem",-20}" +
+            $"{"Time(s)",-15}" +
+            $"{"Lines",-10}" +
+            $"{"Size(KB)",-15}"
         );
 
         Console.WriteLine(
@@ -115,14 +115,14 @@ class Program
         );
 
         Console.WriteLine(
-            $"{"Torres de Hanoi",-20}" +
+            $"{"Towers of Hanoi",-20}" +
             $"{hanoiTime,-15:F6}" +
             $"{CountLines("Hanoi/Hanoi.cs"),-10}" +
             $"{FileSize("Hanoi/Hanoi.cs"),-15:F2}"
         );
 
         Console.WriteLine(
-            $"{"Mochila",-20}" +
+            $"{"Knapsack",-20}" +
             $"{knapsackTime,-15:F6}" +
             $"{CountLines("Knapsack/Knapsack.cs"),-10}" +
             $"{FileSize("Knapsack/Knapsack.cs"),-15:F2}"

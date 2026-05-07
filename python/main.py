@@ -7,7 +7,7 @@ from knapsack.knapsack import Knapsack
 
 
 
-# MÉTRICAS
+ # METRICS
 def count_lines(file_path):
 
     with open(file_path, "r", encoding="utf-8") as file:
@@ -74,7 +74,7 @@ end = time.perf_counter()
 knapsack_time = end - start
 
 
-# LINHAS DE CÓDIGO
+# LINES OF CODE
 sorting_lines = count_lines(
     "sorting/sorting.py"
 )
@@ -102,16 +102,16 @@ knapsack_size = file_size(
 )
 
 
-# TABELA DE MÉTRICAS
+# METRICS TABLE
 print("\n==============================================================")
-print("MÉTRICAS COMPARATIVAS - PYTHON")
+print("COMPARATIVE METRICS - PYTHON")
 print("==============================================================")
 
 print(
-    f"{'Problema':<20}"
-    f"{'Tempo(s)':<15}"
-    f"{'Linhas':<10}"
-    f"{'Tamanho(KB)':<15}"
+    f"{'Problem':<20}"
+    f"{'Time(s)':<15}"
+    f"{'Lines':<10}"
+    f"{'Size(KB)':<15}"
 )
 
 print("-" * 60)
@@ -124,14 +124,14 @@ print(
 )
 
 print(
-    f"{'Torres de Hanoi':<20}"
+    f"{'Towers of Hanoi':<20}"
     f"{hanoi_time:<15.8f}"
     f"{hanoi_lines:<10}"
     f"{hanoi_size:<15}"
 )
 
 print(
-    f"{'Mochila':<20}"
+    f"{'Knapsack':<20}"
     f"{knapsack_time:<15.8f}"
     f"{knapsack_lines:<10}"
     f"{knapsack_size:<15}"

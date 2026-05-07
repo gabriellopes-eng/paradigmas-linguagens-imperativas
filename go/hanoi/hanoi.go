@@ -15,7 +15,7 @@ func Solve(
 		*moves = append(
 			*moves,
 			fmt.Sprintf(
-				"Mover disco 1 de %s para %s",
+				"Move disk 1 from %s to %s",
 				source,
 				target,
 			),
@@ -35,7 +35,7 @@ func Solve(
 	*moves = append(
 		*moves,
 		fmt.Sprintf(
-			"Mover disco %d de %s para %s",
+			"Move disk %d from %s to %s",
 			disks,
 			source,
 			target,

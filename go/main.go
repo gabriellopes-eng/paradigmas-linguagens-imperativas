@@ -85,17 +85,17 @@ func main() {
 	knapsackTime :=
 		time.Since(start).Seconds()
 
-	//TABELA DE MÉTRICAS
+	// METRICS TABLE
 	fmt.Println("\n==============================================================")
-	fmt.Println("MÉTRICAS COMPARATIVAS - GO")
+	fmt.Println("COMPARATIVE METRICS - GO")
 	fmt.Println("==============================================================")
 
 	fmt.Printf(
 		"%-20s%-15s%-10s%-15s\n",
-		"Problema",
-		"Tempo(s)",
-		"Linhas",
-		"Tamanho(KB)",
+		"Problem",
+		"Time(s)",
+		"Lines",
+		"Size(KB)",
 	)
 
 	fmt.Println("------------------------------------------------------------")
@@ -110,7 +110,7 @@ func main() {
 
 	fmt.Printf(
 		"%-20s%-15f%-10d%-15.2f\n",
-		"Torres de Hanoi",
+		"Towers of Hanoi",
 		hanoiTime,
 		countLines("hanoi/hanoi.go"),
 		fileSize("hanoi/hanoi.go"),
@@ -118,11 +118,11 @@ func main() {
 
 	fmt.Printf(
 		"%-20s%-15f%-10d%-15.2f\n",
-		"Mochila",
+		"Knapsack",
 		knapsackTime,
 		countLines("knapsack/knapsack.go"),
 		fileSize("knapsack/knapsack.go"),
 	)
 
-	fmt.Println("============================================================")
+	fmt.Println("==============================================================")
 }
