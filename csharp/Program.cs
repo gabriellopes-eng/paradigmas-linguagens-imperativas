@@ -83,7 +83,7 @@ class Program
         double knapsackTime =
             stopwatch.Elapsed.TotalSeconds;
 
-        // # TABELA DE MÉTRICAS
+        // TABELA DE MÉTRICAS
         Console.WriteLine(
             "\n=============================================================="
         );
