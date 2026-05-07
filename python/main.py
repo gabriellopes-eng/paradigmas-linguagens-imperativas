@@ -6,10 +6,8 @@ from hanoi.hanoi import Hanoi
 from knapsack.knapsack import Knapsack
 
 
-# ==========================================
-# MÉTRICAS
-# ==========================================
 
+# MÉTRICAS
 def count_lines(file_path):
 
     with open(file_path, "r", encoding="utf-8") as file:
@@ -25,10 +23,7 @@ def file_size(file_path):
     )
 
 
-# ==========================================
 # QUICKSORT
-# ==========================================
-
 numbers = random.sample(range(1, 5001), 5000)
 
 start = time.perf_counter()
@@ -40,10 +35,7 @@ end = time.perf_counter()
 quicksort_time = end - start
 
 
-# ==========================================
 # HANOI
-# ==========================================
-
 start = time.perf_counter()
 
 Hanoi.solve(
@@ -58,10 +50,7 @@ end = time.perf_counter()
 hanoi_time = end - start
 
 
-# ==========================================
 # KNAPSACK
-# ==========================================
-
 weights = [
     2, 5, 7, 3, 1,
     4, 6, 8, 9, 2
@@ -85,10 +74,7 @@ end = time.perf_counter()
 knapsack_time = end - start
 
 
-# ==========================================
 # LINHAS DE CÓDIGO
-# ==========================================
-
 sorting_lines = count_lines(
     "sorting/sorting.py"
 )
@@ -102,10 +88,7 @@ knapsack_lines = count_lines(
 )
 
 
-# ==========================================
-# TAMANHO DOS ARQUIVOS
-# ==========================================
-
+# TAMANHO DOS MEUS ARQUIVOS
 sorting_size = file_size(
     "sorting/sorting.py"
 )
@@ -119,10 +102,7 @@ knapsack_size = file_size(
 )
 
 
-# ==========================================
-# TABELA
-# ==========================================
-
+# TABELA DE MÉTRICAS
 print("\n==============================================================")
 print("MÉTRICAS COMPARATIVAS - PYTHON")
 print("==============================================================")
@@ -158,3 +138,4 @@ print(
 )
 
 print("=" * 60)
+

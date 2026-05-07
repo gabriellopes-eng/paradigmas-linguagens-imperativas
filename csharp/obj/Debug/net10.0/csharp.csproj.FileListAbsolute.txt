@@ -12,3 +12,4 @@ C:\Users\Elward\paradigmas-linguagens-imperativas\paradigmas-linguagens-imperati
 C:\Users\Elward\paradigmas-linguagens-imperativas\paradigmas-linguagens-imperativas\csharp\obj\Debug\net10.0\csharp.pdb
 C:\Users\Elward\paradigmas-linguagens-imperativas\paradigmas-linguagens-imperativas\csharp\obj\Debug\net10.0\csharp.genruntimeconfig.cache
 C:\Users\Elward\paradigmas-linguagens-imperativas\paradigmas-linguagens-imperativas\csharp\obj\Debug\net10.0\ref\csharp.dll
+C:\Users\Elward\paradigmas-linguagens-imperativas\paradigmas-linguagens-imperativas\csharp\obj\Debug\net10.0\csharp.sourcelink.json

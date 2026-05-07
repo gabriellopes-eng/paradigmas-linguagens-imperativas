@@ -20,10 +20,7 @@ class Program
     {
         Random random = new Random();
 
-        // =====================================
         // QUICKSORT
-        // =====================================
-
         int[] numbers =
             Enumerable.Range(1, 50000)
             .OrderBy(x => random.Next())
@@ -39,10 +36,7 @@ class Program
         double quicksortTime =
             stopwatch.Elapsed.TotalSeconds;
 
-        // =====================================
         // HANOI
-        // =====================================
-
         List<string> moves = new();
 
         stopwatch.Restart();
@@ -60,10 +54,7 @@ class Program
         double hanoiTime =
             stopwatch.Elapsed.TotalSeconds;
 
-        // =====================================
         // KNAPSACK
-        // =====================================
-
         int[] weights =
         {
             2, 5, 7, 3, 1,
@@ -92,10 +83,7 @@ class Program
         double knapsackTime =
             stopwatch.Elapsed.TotalSeconds;
 
-        // =====================================
-        // TABELA
-        // =====================================
-
+        // # TABELA DE MÉTRICAS
         Console.WriteLine(
             "\n=============================================================="
         );

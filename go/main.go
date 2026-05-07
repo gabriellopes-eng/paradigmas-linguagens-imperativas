@@ -36,10 +36,7 @@ func fileSize(path string) float64 {
 
 func main() {
 
-	// ======================================
 	// QUICKSORT
-	// ======================================
-
 	numbers := rand.Perm(50000)
 
 	start := time.Now()
@@ -49,10 +46,7 @@ func main() {
 	quicksortTime :=
 		time.Since(start).Seconds()
 
-	// ======================================
 	// HANOI
-	// ======================================
-
 	var moves []string
 
 	start = time.Now()
@@ -68,10 +62,7 @@ func main() {
 	hanoiTime :=
 		time.Since(start).Seconds()
 
-	// ======================================
 	// KNAPSACK
-	// ======================================
-
 	weights := []int{
 		2, 5, 7, 3, 1,
 		4, 6, 8, 9, 2,
@@ -94,10 +85,7 @@ func main() {
 	knapsackTime :=
 		time.Since(start).Seconds()
 
-	// ======================================
-	// MÉTRICAS
-	// ======================================
-
+	//TABELA DE MÉTRICAS
 	fmt.Println("\n==============================================================")
 	fmt.Println("MÉTRICAS COMPARATIVAS - GO")
 	fmt.Println("==============================================================")
