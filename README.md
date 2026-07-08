@@ -1,29 +1,27 @@
-# Linguagens imperativas: um comparativo prático
+# Imperative languages: a hands-on comparison
 
-Trabalho da disciplina de Paradigmas de Programação. A ideia é simples: pegar três
-problemas clássicos de computação, implementar cada um em Python, Go e C#, e medir
-como as três linguagens se comportam.
+Project for the Programming Paradigms course. The idea is simple: take three classic
+computer science problems, implement each one in Python, Go and C#, and measure how the
+three languages behave.
 
-Não é um benchmark científico — os números variam de máquina para máquina e de execução
-para execução. O objetivo é enxergar, na prática, as diferenças entre uma linguagem
-interpretada (Python) e duas compiladas (Go e C#), além de comparar estilo de código e
-organização.
+This is not a scientific benchmark - the numbers vary from machine to machine and from
+run to run. The goal is to see, in practice, the differences between an interpreted
+language (Python) and two compiled ones (Go and C#), and to compare coding style and
+organization along the way.
 
-## Os problemas
+## The problems
 
-- **QuickSort** — ordenação recursiva por divisão e conquista. Roda sobre um vetor de
-  5000 números aleatórios.
-- **Torres de Hanói** — o quebra-cabeça recursivo, resolvido com 15 discos (32767
-  movimentos).
-- **Mochila (Knapsack)** — otimização por programação dinâmica, com capacidade 20 e
-  10 itens.
+- **QuickSort** - recursive divide-and-conquer sorting. Runs over an array of 5000
+  random numbers.
+- **Towers of Hanoi** - the recursive puzzle, solved with 15 disks (32767 moves).
+- **Knapsack** - dynamic programming optimization, with capacity 20 and 10 items.
 
-Cada linguagem resolve os três e imprime uma tabela com o tempo de execução, o número
-de linhas e o tamanho do arquivo de cada solução.
+Each language solves all three and prints a table with the execution time, line count
+and file size of each solution.
 
-## Como rodar
+## How to run
 
-Cada linguagem fica em sua própria pasta e roda de forma independente.
+Each language lives in its own folder and runs independently.
 
 ```bash
 # Python 3
@@ -39,7 +37,7 @@ cd csharp
 dotnet run
 ```
 
-## Estrutura
+## Structure
 
 ```text
 .
@@ -48,10 +46,10 @@ dotnet run
 └── csharp/     Program.cs + Sorting/ Hanoi/ Knapsack/
 ```
 
-A separação por pasta é proposital: cada problema mora em seu próprio módulo, e o
-`main` de cada linguagem só orquestra a execução e a medição.
+The folder split is intentional: each problem lives in its own module, and the `main`
+of each language only orchestrates the run and the measurement.
 
-## O que a saída mostra
+## What the output shows
 
 ```text
 ==============================================================
@@ -65,19 +63,19 @@ Knapsack            0.056076       63        1.80
 ==============================================================
 ```
 
-Três colunas de métrica:
+Three metric columns:
 
-- **Tempo** — medido só em torno da chamada do algoritmo, sem contar setup nem I/O.
-- **Linhas** — contagem do arquivo de cada solução, como proxy de verbosidade.
-- **Tamanho** — o arquivo em KB.
+- **Time** - measured only around the algorithm call, without setup or I/O.
+- **Lines** - line count of each solution file, used as a proxy for verbosity.
+- **Size** - the file in KB.
 
-Vale lembrar que Python paga o custo do interpretador e do overhead de inicialização, o
-que costuma aparecer nos tempos. Go e C# passam por compilação antes de rodar, então a
-comparação de tempo bruto não é uma disputa "justa" — e é exatamente esse contraste que
-o trabalho quer mostrar.
+Keep in mind that Python pays the cost of the interpreter and the startup overhead,
+which usually shows up in the timings. Go and C# go through compilation before running,
+so a raw time comparison is not a "fair" fight - and that contrast is exactly what this
+project is meant to show.
 
-## Autor
+## Author
 
 Gabriel Lopes de Albuquerque
 
-Projeto acadêmico, sem fins comerciais.
+Academic project, no commercial purpose.
